@@ -20,9 +20,17 @@ Start the database services using Docker Compose:
 docker-compose up
 ```
 
+### 3. Clear Database Tables
+
+You can clear the tables by running the following command:
+
+```bash
+docker-compose down -v && docker-compose up
+```
+
 This command will start the database services defined in the `docker-compose.yml` file in detached mode.
 
-### 3. Verify Database Setup
+### 4. Verify Database Setup
 
 Once the containers are up and running, you can verify the database setup by connecting to the database using your preferred database management tool (e.g., DBeaver, TablePlus) or by running database queries.
 
